@@ -25,6 +25,7 @@ services:
       - "2222:22"
     volumes:
       - /path/to/your/id_rsa.pub:/home/user/.ssh/keys/id_rsa.pub:ro
+      - /path/authorized_keys:/home/user/.ssh/keys/authorized_keys:ro
 ```
 ## running
 ```
