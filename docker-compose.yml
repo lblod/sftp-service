@@ -1,0 +1,7 @@
+version: '3.4'
+services:
+  sftp:
+    image: atmoz/sftp
+    volumes:
+      - ./data/files:/home/user
+    command: user::::share
